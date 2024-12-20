@@ -15,4 +15,4 @@ match operation:
             result = ("Error: division by zero is not allowed")
     case _:
         result = ("invalid")
-print (f"The result is {result}")
+print ("The result is", result)
