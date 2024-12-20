@@ -14,5 +14,5 @@ match operation:
         else:
             result = ("Error: division by zero is not allowed")
     case _:
-        resutl = ("invalid")
+        result = ("invalid")
 print (f"The result is {result}")
