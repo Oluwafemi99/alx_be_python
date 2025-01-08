@@ -13,7 +13,6 @@ def romove_item(item):
 
 
 def view_list():
-    print(shopping_list)
     for item in shopping_list:
         print(item)
 
@@ -33,13 +32,15 @@ def main():
 
         if choice == '1':
             # Prompt for and add an item
-            pass
+            item = input("Enter the item: ")
+            add_item(item)
         elif choice == '2':
             # Prompt for and remove an item
-            pass
+            item = input("enter the item")
+            romove_item(item)
         elif choice == '3':
             # Display the shopping list
-            pass
+            view_list()
         elif choice == '4':
             print("Goodbye!")
             break
