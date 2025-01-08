@@ -32,11 +32,11 @@ def main():
 
         if choice == '1':
             # Prompt for and add an item
-            item = input("Enter the item: ")
+            item = input("Enter the item to add:")
             add_item(item)
         elif choice == '2':
             # Prompt for and remove an item
-            item = input("enter the item")
+            item = input("Enter the item to remove:")
             romove_item(item)
         elif choice == '3':
             # Display the shopping list
