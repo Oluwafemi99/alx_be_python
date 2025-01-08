@@ -4,25 +4,21 @@ shopping_list = []
 
 def add_item(item):
     shopping_list.append(item)
-    print(f"You have added {item}")
+    print(f"you have added {item}")
 
 
-def remove_item(item):
-    if item in shopping_list:
-        shopping_list.remove(item)
-        print(f"You have removed {item}")
-    else:
-        print(f"{item} not found in the shopping list")
+def romove_item(item):
+    shopping_list.remove(item)
+    print(f"you have remove {item}")
 
 
 def view_list():
-    print("Shopping List:")
     for item in shopping_list:
-        print(f"- {item}")
+        print(item)
 
 
 def display_menu():
-    print("\nShopping List Manager")
+    print("Shopping List Manager")
     print("1. Add Item")
     print("2. Remove Item")
     print("3. View List")
@@ -41,7 +37,7 @@ def main():
         elif choice == '2':
             # Prompt for and remove an item
             item = input("Enter the item to remove: ")
-            remove_item(item)
+            romove_item(item)
         elif choice == '3':
             # Display the shopping list
             view_list()
